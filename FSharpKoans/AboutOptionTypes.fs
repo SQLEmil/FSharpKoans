@@ -33,6 +33,8 @@ module ``about option types`` =
 
         AssertEquality noValue.IsSome false
         AssertEquality noValue.IsNone true
+        // As near as I can tell, the AssertThrows is really just throwing the exception....
+        //AssertThrows<Exception> (fun () -> failwith "here is an error")
         //AssertThrows<System.NullReferenceException> (fun () -> noValue.Value)
 
     [<Koan>]
